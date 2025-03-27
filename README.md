@@ -51,23 +51,6 @@ Added regularization to control model complexity and improve generalization.
 ### 4. Adaptive Learning Rate
 Incorporated dynamic learning rate adjustment to optimize convergence.
 
-## Usage
-
-```python
-# Example code for using the model
-from model import GradientBoostingRegressionTree
-
-# Load and prepare data
-# ...
-
-# Initialize and train the model
-model = GradientBoostingRegressionTree()
-model.train(X_train, y_train, X_val, y_val)
-
-# Make predictions
-predictions = model.predict(X_test)
-```
-
 ## Results
 
 ![alt text](https://github.com/Unchana19/stock-price-prediction/blob/main/example_result.png?raw=true)
