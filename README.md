@@ -27,7 +27,7 @@ The project uses historical stock price data obtained through the [yfinance](htt
 Clone the repository and install the required packages:
 
 ```bash
-git clone https://github.com/yourusername/stock-price-prediction.git
+git clone https://github.com/Unchana19/stock-price-prediction.git
 cd stock-price-prediction
 pip install -r requirements.txt
 ```
@@ -70,4 +70,4 @@ predictions = model.predict(X_test)
 
 ## Results
 
-[Include performance metrics and visualizations when available]
+![alt text](https://github.com/Unchana19/stock-price-prediction/blob/main/example_result.png?raw=true)
