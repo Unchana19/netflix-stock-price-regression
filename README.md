@@ -7,7 +7,7 @@ A machine learning project implementing a custom Gradient Boosting Regression Tr
 
 ## Overview
 
-This project aims to predict stock price movements using historical data from the stock market. The implementation uses a custom Gradient Boosting Regression Tree model with several optimizations.
+This project aims to predict stock price movements using historical data from the stock market. The implementation uses a custom Gradient Boosting Regression Tree model with several optimizations. The model is designed to provide accurate predictions while maintaining computational efficiency.
 
 ## Dataset
 
@@ -16,6 +16,8 @@ The project uses historical stock price data obtained through the [yfinance](htt
 - High and low prices
 - Trading volume
 - Adjusted close prices
+
+The data can be customized for any publicly traded stock with a specified date range.
 
 ## Requirements
 
@@ -41,15 +43,34 @@ Added domain-specific features to improve prediction accuracy:
 - Technical indicators (Moving Averages, RSI, MACD)
 - Market sentiment analysis
 - Temporal features
+- Volume-based indicators
+- Price momentum indicators
 
 ### 2. Early Stopping
-Implemented early stopping to prevent overfitting by monitoring validation performance.
+Implemented early stopping to prevent overfitting by monitoring validation performance:
+- Validation error monitoring
+- Patience parameter for stopping
+- Best model checkpoint saving
 
 ### 3. L2 Regularization
-Added regularization to control model complexity and improve generalization.
+Added regularization to control model complexity and improve generalization:
+- Leaf weight regularization
+- Tree depth control
+- Minimum samples per leaf
 
-### 4. Adaptive Learning Rate
-Incorporated dynamic learning rate adjustment to optimize convergence.
+### 4. Out of Bag Error
+Implemented Out of Bag (OOB) error estimation:
+- Unbiased performance estimation
+- Model validation without separate validation set
+- Automatic hyperparameter tuning support
+
+## Evaluation Metrics
+
+The model's performance is evaluated using multiple metrics:
+- Mean Absolute Error (MAE)
+- Root Mean Square Error (RMSE)
+- R-squared (R²) score
+- Direction Accuracy (percentage of correct price movement predictions)
 
 ## Results
 
